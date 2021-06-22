@@ -1,0 +1,20 @@
+.contact tr{
+  height: 7rem;
+}
+.contact th{
+  width: 150px;
+  text-align: right;
+  padding-right:10px;
+}  
+.contact .text{
+  width: 480px;
+}
+.submit{
+  color: aliceblue;
+  background-color: #008B8B;
+  padding: 10px 10px;  
+  text-align: center; 
+}
+.input_form:hover{
+  opacity: 0.5;
+}
