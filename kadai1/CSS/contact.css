@@ -9,14 +9,15 @@
 .contact .text{
   width: 480px;
 }
-.input_form:hover{
+.submit input:hover{
   opacity: 0.5;
 }
 .submit input{
-  color: aliceblue;
+  color:white;
   background-color: #008B8B;
   padding: 10px 10px;  
   text-align: center; 
+  font-size: 3rem;
 }
 .submit{
   text-align: center;
