@@ -92,12 +92,11 @@ $(document).ready(function () {
     // 「最終ジャッジ」(id="btn-declaration")ボタンが押された際、「function judgement()」の処理を実行させる。
     // ２回目以降に「最終ジャッジ」ボタンを押した際は、それまでに表示していたジャッジのHTML要素を削除して、新たなジャッジのHTML要素を追加する。
     // ヒント：removeメソッドについて調べてみましょう。
-    $('#btn-declaration').click(function () {
-        ("#declaration").text(judgement());
-    });
-    $('#btn-declaration').click(function () {
-        ("#declaration").remove.text(jugement());
-        
+    $('#btn-declaration').click(function() {
+      if ($('#declaration #alert-indicate').length) {
+        $('#declaration #alert-indicate').remove();
+      }
+      judgement();
     });
   });
   // ここに書かれているJavaScriptの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構いません。合格要件をすべて満たしていれば合格となります。
