@@ -44,9 +44,7 @@ end
 class Janken
     def pon(player_hand, enemy_hand)
         # 変数「janken」に["グー", "チョキ", "パー"]を代入します。
-        
         janken = ["グー", "チョキ", "パー"]
-        
         #「相手の手は#{相手の手}です。」と出力させます。
         puts "相手の手は#{janken[enemy_hand]}です。"
         # Playerクラスの戻り値とEnemyクラスの戻り値からじゃんけんするロジックを作成します。
